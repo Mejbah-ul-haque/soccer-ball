@@ -1,9 +1,10 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => {
     return (
-        <div>
-            <h2>This is Home page</h2>
+        <div className='logo'>
+            <h2 className='text-10xl'>This is Home page</h2>
         </div>
     );
 };

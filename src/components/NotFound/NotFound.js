@@ -3,7 +3,7 @@ import "./NotFound.css";
 
 const NotFound = () => {
     return (
-        <div>
+        <div className='grid justify-items-center'>
             <img src={require('../Images/notFound.png')} />
         </div>
     );
