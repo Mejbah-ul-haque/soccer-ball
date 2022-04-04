@@ -5,10 +5,10 @@ import CustomLink from '../CustomLink/CustomLink';
 const Header = () => {
     return (
         <div>
-            <h2 className='text-2xl bg-green-500 p-2 text-white font-bold'>High Quality Soccer Ball</h2>
-            <nav>
+            <h2 className='text-4xl bg-green-500 p-4 text-white font-bold'>SOCCER BALL</h2>
+            <nav className='border-b-2 border-green-500'>
                 <ul>
-                    <li className='flex justify-center mt-8 mb-8'>
+                    <li className='flex justify-center my-5'>
                         <CustomLink className='mr-8' to='/'>HOME</CustomLink>
                         <CustomLink className='mr-8' to='/reviews'>REVIEWS</CustomLink>
                         <CustomLink className='mr-8' to='/dashboard'>DASHBOARD</CustomLink>
