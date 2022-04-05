@@ -43,7 +43,7 @@ const Dashboard = () => {
     ]
 
     return (
-        <div className='container mx-auto grid lg:grid-cols-2'>
+        <div className='container mx-auto lg:grid grid-cols-2'>
 
             <div>
                 <button className='my-16 bg-purple-100 px-16 py-2 text-purple-700 font-bold rounded-full border-solid border-2 border-purple-500'>Pie Chart</button>
