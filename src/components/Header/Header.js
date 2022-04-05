@@ -5,7 +5,7 @@ import CustomLink from '../CustomLink/CustomLink';
 const Header = () => {
     return (
         <div>
-            <h2 className='text-4xl bg-green-500 p-4 text-white font-bold'>SOCCER BALL</h2>
+            <h2 className='text-4xl bg-green-500 p-4 text-white font-bold '>SOCCER BALL</h2>
             <nav className='border-b-2 border-green-500'>
                 <ul>
                     <li className='flex justify-center my-5'>
