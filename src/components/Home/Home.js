@@ -1,10 +1,16 @@
 import React from 'react';
 import './Home.css';
 import img from '../Images/soccerBall.jpg'
+import useReviews from '../../hooks/useReviews';
+import Review from '../Review/Review';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Home = () => {
+
+    const navigate = useNavigate();
+    const [reviews, setReviews] = useReviews();
 
     return (
         <div>
@@ -20,8 +26,21 @@ const Home = () => {
                 </div>
 
             </div >
-            <div className=''>
+            <div className='container'>
+                <h3 className='my-16 font-bold text-3xl'>Customer Reviews (3)</h3>
+                <ul>
+                    <li className='grid md:grid-cols-2 lg:grid-cols-3'>
 
+                        {
+                            reviews.map(review => <Review
+                                key={review.id}
+                                review={review}
+                            ></Review>)
+                        }
+
+                    </li>
+                </ul>
+                <button onClick={() => navigate("/reviews")} className='text-2xl bg-green-500 px-16 py-2 rounded-full hover:bg-green-200 hover:font-bold hover:text-green-700 mb-20 '>See All Reviews</button>
             </div>
         </div>
     );

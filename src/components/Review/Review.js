@@ -5,7 +5,7 @@ const Review = (props) => {
     return (
         <div className=' '>
 
-            <div className='text-left p-8   m-5 h-full'>
+            <div className='text-left p-8 h-full'>
                 <h3 className='font-bold bg-green-200 p-2 pl-6'>{name}</h3>
                 <h4 className='my-4 text-2xl'>{comment}</h4>
                 <p>Ratings >>  <span className='text-red-500 font-bold'>{ratings}</span></p>
